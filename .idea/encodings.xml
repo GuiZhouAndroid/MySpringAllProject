@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/SpringDemo01/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringDemo01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo01_IOC_XML/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo01_IOC_XML/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringDemo02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringDemo02/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringDemo02_NotSpringMVC/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringDemo02_NotSpringMVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo02_NOT_IOC_MVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo02_NOT_IOC_MVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo03_YES_IOC_MVC_XML/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo03_YES_IOC_MVC_XML/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringDemo03_YesSpringMVC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringDemo03_YesSpringMVC/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringDemo03_YesSpringMVC_XML/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringDemo03_YesSpringMVC_XML/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo04_Constructor_IOC_XML/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo04_Constructor_IOC_XML/src/main/resources" charset="UTF-8" />
   </component>
 </project>

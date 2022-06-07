@@ -6,13 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringDemo02_NotSpringMVC" />
-        <module name="SpringDemo01" />
-        <module name="SpringDemo03_YesSpringMVC_XML" />
+        <module name="SpringDemo01_IOC_XML" />
+        <module name="SpringDemo04_Constructor_IOC_XML" />
+        <module name="SpringDemo02_NOT_IOC_MVC" />
+        <module name="SpringDemo03_YES_IOC_MVC_XML" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringDemo01_XML" target="1.8" />
       <module name="SpringDemo02-MVC" target="1.8" />
+      <module name="SpringDemo02_NotMVC" target="1.8" />
+      <module name="SpringDemo03_YesMVC_XML" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

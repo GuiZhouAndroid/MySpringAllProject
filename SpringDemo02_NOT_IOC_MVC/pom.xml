@@ -5,11 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.dhrj.java.zsitking</groupId>
-  <artifactId>SpringDemo03_YesSpringMVC_XML</artifactId>
+  <artifactId>SpringDemo02_NOT_IOC_MVC</artifactId>
   <version>1.0</version>
 
-  <name>SpringDemo03_YesSpringMVC_XML</name>
-
+  <name>SpringDemo02_NOT_IOC_MVC</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,12 +22,6 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
-    </dependency>
-    <!-- Spring依赖配置 -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>5.3.20</version>
     </dependency>
   </dependencies>
 

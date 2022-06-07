@@ -12,9 +12,11 @@
       <list>
         <option value="$PROJECT_DIR$/SpringDemo01/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDemo02/SpringDemo02_NotSpringMVC/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringDemo02_NotSpringMVC/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDemo03_YesSpringMVC/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringDemo03_YesSpringMVC_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo01_IOC_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo02_NOT_IOC_MVC/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo03_YES_IOC_MVC_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo04_Constructor_IOC_XML/pom.xml" />
       </list>
     </option>
   </component>
