@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringDemo02_NotSpringMVC" />
+        <module name="SpringDemo03_YesSpringMVC" />
         <module name="SpringDemo01" />
       </profile>
     </annotationProcessing>
