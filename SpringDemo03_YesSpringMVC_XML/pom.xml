@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.dhrj.java.zsitking</groupId>
-  <artifactId>SpringDemo03_YesSpringMVC</artifactId>
+  <artifactId>SpringDemo03_YesSpringMVC_XML</artifactId>
   <version>1.0</version>
 
-  <name>SpringDemo03_YesSpringMVC</name>
+  <name>SpringDemo03_YesSpringMVC_XML</name>
 
 
   <properties>
