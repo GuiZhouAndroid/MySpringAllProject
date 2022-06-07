@@ -4,21 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- 项目坐标 -->
     <groupId>com.dhrj.java.zsking</groupId>
     <artifactId>SpringDemo01</artifactId>
     <version>1.0</version>
-
+    <!-- 项目名称 -->
     <name>SpringDemo01</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
 
+    <!-- 属性编译配置 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+    <!-- 依赖清单 -->
     <dependencies>
+        <!-- 单元代码测试 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -29,12 +31,14 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.3.18</version>
+            <version>5.3.20</version>
         </dependency>
     </dependencies>
 
+    <!-- 项目构建配置 -->
     <build>
         <resources>
+            <!-- 扫描加载java目录下指定后缀资源 -->
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
@@ -42,6 +46,7 @@
                     <include>**/*.properties</include>
                 </includes>
             </resource>
+            <!-- 扫描加载resources目录下指定后缀资源 -->
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
