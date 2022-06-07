@@ -11,6 +11,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/SpringDemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo02/SpringDemo02_NotSpringMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo02_NotSpringMVC/pom.xml" />
       </list>
     </option>
   </component>
