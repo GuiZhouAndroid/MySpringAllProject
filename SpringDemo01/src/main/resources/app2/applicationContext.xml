@@ -4,16 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--创建学生对象等同于 Student stu = new Student();
-            id:就是创建的对象的名称
-            class:就是创建的对象的类型,底层通过反射构建对象
-            启动容器的同时,创建对象
-    -->
+    <!--创建书对象-->
     <bean id="myBook" class="com.dhrj.java.zsking.pojo.Book">
         <property name="bookName" value="露娜月下无限连"></property>
         <property name="bookPrice" value="666"></property>
     </bean>
-
+    <!--创建学生和书对象 ref引入书的对象(ref的属性值与书对象的id属性值必须相同)-->
     <bean id="myStuAndBook" class="com.dhrj.java.zsking.pojo.StudentAndBook">
         <property name="name" value="张松"></property>
         <property name="age" value="24"></property>
