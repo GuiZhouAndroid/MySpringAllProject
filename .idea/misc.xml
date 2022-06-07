@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/SpringDemo02_NOT_IOC_MVC/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDemo03_YES_IOC_MVC_XML/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDemo04_Constructor_IOC_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo05_Annotation_IOC/pom.xml" />
       </list>
     </option>
   </component>
