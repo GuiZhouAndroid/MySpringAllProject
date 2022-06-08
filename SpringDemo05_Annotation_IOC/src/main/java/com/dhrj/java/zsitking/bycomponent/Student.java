@@ -1,4 +1,4 @@
-package com.dhrj.java.zsitking.s1;
+package com.dhrj.java.zsitking.bycomponent;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
