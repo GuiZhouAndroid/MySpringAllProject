@@ -10,9 +10,12 @@
         <property name="bookPrice" value="666"></property>
     </bean>
     <!--创建学生和书对象 ref引入书的对象(ref的属性值与书对象的id属性值必须相同)-->
-    <bean id="myStuAndBook" class="com.dhrj.java.zsking.pojo.StudentAndBook">
+    <bean id="myStuAndBook" class="com.dhrj.java.zsking.pojo.StudentAndBook" autowire="byType">
         <property name="name" value="张松"></property>
         <property name="age" value="24"></property>
-        <property name="book" ref="myBook"></property>
+        <!-- bean标签增加autowire="byType"为自动注入，因此以下代码不为声明注入 -->
+        <!-- autowire="byType" 等同于 @Autowired -->
+        <!-- autowire="byName" 等同于 @Autowired + @Qualifier -->
+        <!-- <property name="book" ref="myBook"></property> -->
     </bean>
 </beans>
