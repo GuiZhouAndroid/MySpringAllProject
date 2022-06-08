@@ -2,17 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <!-- 一、创建各种需要容器管理的对象  -->
-    <!--  1.创建数据访问层的对象  -->
-    <bean id="uMapper" class="com.dhrj.java.zsitking.dao.impl.UserMapperImpl"></bean>
-    <!--  2.创建业务逻辑层的对象  -->
-    <bean id="uService" class="com.dhrj.java.zsitking.service.impl.UserServiceImpl">
-        <property name="userMapper" ref="uMapper"></property>
-    </bean>
+    <!-- 创建各种需要容器管理的对象  -->
     <!--  3.创建界面层的对象  -->
     <bean id="uController" class="com.dhrj.java.zsitking.controller.UserController">
         <property name="userService" ref="uService"></property>
     </bean>
 </beans>
-

@@ -17,11 +17,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MyTest {
     @Test
     public void test01() {
-        //1.创建容器并启动加载bean对象
-        ApplicationContext ac = new ClassPathXmlApplicationContext("totalContext.xml");
-        //2.取出对象
-        UserController uController = (UserController) ac.getBean("uController");
-        //3.测试对象功能
-        System.out.println(uController.addUser(new User(1998, "张松", 24)));
+        // 1.创建并启动容器
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("totalContext.xml");
+        // 2.取出对象
+        UserController userController = (UserController) applicationContext.getBean("userController");
+        // 3.测试功能
+        userController.addUser(new User(1998, "张松", 24));
+
     }
 }

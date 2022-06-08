@@ -19,5 +19,9 @@
     <file url="file://$PROJECT_DIR$/SpringDemo04_Constructor_IOC_XML/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringDemo05_Annotation_IOC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringDemo05_Annotation_IOC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo06_NOT_IOC_Annotation_MVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo06_NOT_IOC_Annotation_MVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo06_YES_IOC_Annotation_MVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDemo06_YES_IOC_Annotation_MVC/src/main/resources" charset="UTF-8" />
   </component>
 </project>
