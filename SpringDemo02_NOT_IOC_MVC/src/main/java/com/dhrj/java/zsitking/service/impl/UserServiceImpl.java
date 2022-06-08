@@ -1,6 +1,7 @@
 package com.dhrj.java.zsitking.service.impl;
 
 
+import com.dhrj.java.zsitking.dao.UserMapper;
 import com.dhrj.java.zsitking.dao.impl.UserMapperImpl;
 import com.dhrj.java.zsitking.pojo.User;
 import com.dhrj.java.zsitking.service.UserService;
@@ -15,7 +16,7 @@ import com.dhrj.java.zsitking.service.UserService;
 public class UserServiceImpl implements UserService {
 
     // 在所有业务逻辑层中都必定有数据访问层的对象
-    private com.dhrj.java.zsitking.dao.UserMapper UserMapper = new UserMapperImpl();
+    private UserMapper UserMapper = new UserMapperImpl();
 
     @Override
     public int addUser(User user) {

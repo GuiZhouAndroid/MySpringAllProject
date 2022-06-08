@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--创建书对象-->
+    <bean id="myBook" class="com.dhrj.java.zsking.pojo.Book">
+        <property name="bookName" value="露娜月下无限连"></property>
+        <property name="bookPrice" value="666"></property>
+    </bean>
+    <!--创建学生和书对象 ref引入书的对象(ref的属性值与书对象的id属性值必须相同)-->
+    <bean id="myStuAndBook" class="com.dhrj.java.zsking.pojo.StudentAndBook">
+        <property name="name" value="张松"></property>
+        <property name="age" value="24"></property>
+        <property name="book" ref="myBook"></property>
+    </bean>
+</beans>

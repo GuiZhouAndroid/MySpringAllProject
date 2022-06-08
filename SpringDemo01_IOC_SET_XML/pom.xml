@@ -6,10 +6,10 @@
 
     <!-- 项目坐标 -->
     <groupId>com.dhrj.java.zsking</groupId>
-    <artifactId>SpringDemo01_IOC_XML</artifactId>
+    <artifactId>SpringDemo01_IOC_SET_XML</artifactId>
     <version>1.0</version>
     <!-- 项目名称 -->
-    <name>SpringDemo01_IOC_XML</name>
+    <name>SpringDemo01_IOC_SET_XML</name>
 
     <!-- 属性编译配置 -->
     <properties>
