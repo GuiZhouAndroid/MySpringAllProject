@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * created by on 2022/6/7
- * 描述：测试三层架构搭建的项目
+ * 描述：测试基于Spring常用注解搭建三层架构的项目
  *
  * @author ZSAndroid
  * @create 2022-06-07-14:43
