@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * created by on 2022/6/6
- * 描述：Spring测试————由spring容器“控制反转(IOC)”进行对象的创建
+ * 描述：Spring测试XML方式的IOC————由spring容器“控制反转(IOC)”进行对象的创建
  *
  * @author ZSAndroid
  * @create 2022-06-06-15:21
@@ -17,7 +17,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringTest01 {
 
     /**
-     * app1/applicationContext.xml下的id为“myStu”的Spring注入
+     * resources/app1/applicationContext.xml下的id为“myStu”的Spring注入
      */
     @Test
     public void testStudentSpring() {
