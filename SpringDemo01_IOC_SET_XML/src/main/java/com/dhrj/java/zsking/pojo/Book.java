@@ -8,8 +8,8 @@ package com.dhrj.java.zsking.pojo;
  * @create 2022-06-06-16:08
  */
 public class Book {
-    private String bookName;
-    private int bookPrice;
+    private String bookName;//书名
+    private int bookPrice;//售价
 
     public Book() {
         System.out.println("Spring创建书对象的无参构造执行了......");

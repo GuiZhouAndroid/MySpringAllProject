@@ -10,6 +10,7 @@
             启动容器的同时,创建对象
     -->
     <bean id="myStu" class="com.dhrj.java.zsking.pojo.Student">
+        <!--  Student类若没有提供setXXX()方法，"name"和"age"会提示报红，意味着无法使用Spring框架给名为"myStu"的学生对象注入赋值"张松"和"24" -->
         <property name="name" value="张松"></property>
         <property name="age" value="24"></property>
     </bean>

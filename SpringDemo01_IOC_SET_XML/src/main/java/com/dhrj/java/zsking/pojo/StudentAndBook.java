@@ -8,13 +8,13 @@ package com.dhrj.java.zsking.pojo;
  * @create 2022-06-06-16:16
  */
 public class StudentAndBook {
-    private String name;
-    private int age;
-    //引用类型的成员变量，学生的书
-    private Book book;
+    private String name;//姓名
+    private int age;//年龄
+    //引用类型的成员变量
+    private Book book;//学生的书
 
     public StudentAndBook() {
-        System.out.println("学生和书订单无参的构造方法执行了...");
+        System.out.println("学生的书无参构造方法执行了...");
     }
 
     //交给Spring容器注入值,必须提供setXXX()方法
