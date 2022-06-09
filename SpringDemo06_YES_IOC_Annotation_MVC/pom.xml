@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dhrj.java.zsitking</groupId>
-    <artifactId>SpringDemo06_NOT_IOC_Annotation_MVC</artifactId>
+    <artifactId>SpringDemo06_YES_IOC_Annotation_MVC</artifactId>
     <version>1.0</version>
 
-    <name>SpringDemo06_NOT_IOC_Annotation_MVC</name>
+    <name>SpringDemo06_YES_IOC_Annotation_MVC</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
