@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * created by on 2022/6/7
- * 描述：测试基于注解包扫描Spring注入的实例对象
+ * 描述：测试基于注解@Component注入的实例对象
  *
  * @author ZSAndroid
  * @create 2022-06-07-17:53
