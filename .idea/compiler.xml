@@ -9,6 +9,7 @@
         <module name="SpringDemo01_IOC_SET_XML" />
         <module name="SpringDemo04_Constructor_IOC_XML" />
         <module name="SpringDemo03_YES_IOC_SET_XML_MVC" />
+        <module name="SpringDemo08_ProtoSupport_AOP" />
         <module name="SpringDemo05_Annotation_IOC" />
         <module name="SpringDemo06_YES_IOC_Annotation_MVC" />
         <module name="SpringDemo02_NOT_IOC_MVC" />
@@ -16,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpingDemo08_ProtoSupport _AOP" target="1.8" />
       <module name="SpringDemo01_XML" target="1.8" />
       <module name="SpringDemo02-MVC" target="1.8" />
       <module name="SpringDemo02_NotMVC" target="1.8" />
