@@ -9,9 +9,11 @@
         <module name="SpringDemo01_IOC_SET_XML" />
         <module name="SpringDemo04_Constructor_IOC_XML" />
         <module name="SpringDemo03_YES_IOC_SET_XML_MVC" />
+        <module name="SpringDemo03_YES_IOC_MVC_XML" />
         <module name="SpringDemo08_ProtoSupport_AOP" />
         <module name="SpringDemo05_Annotation_IOC" />
         <module name="SpringDemo06_YES_IOC_Annotation_MVC" />
+        <module name="SpringDemo09_AspectJ" />
         <module name="SpringDemo02_NOT_IOC_MVC" />
         <module name="SpringDemo07_AOP" />
       </profile>
