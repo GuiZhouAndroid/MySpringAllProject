@@ -15,7 +15,6 @@ import java.util.Arrays;
  * @VCS: <a href="https://github.com/GuiZhouAndroid"/>
  * @Copyright: 辽宁省-大连市-东华软件大连分公司
  */
-//前置通知使用AspectJ实现AOP功能，此类为切面类,包含各种切面方法
 @Aspect //交给AspectJ的框架去识别切面类
 @Component //切面实例注册加载到spring容器中
 public class BeforeAspectJ {
