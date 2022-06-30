@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @Created: by 2022-06-30 17:31
- * @Description:
+ * @Description:环绕通知使用AspectJ实现AOP功能，此类为切面类,包含各种切面方法
  * @Author: 张松
  * @Blog: <a href="https://blog.csdn.net/qq_39038178"/>
  * @VCS: <a href="https://github.com/GuiZhouAndroid"/>
