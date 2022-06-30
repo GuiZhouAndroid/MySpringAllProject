@@ -22,7 +22,7 @@ public class BeforeTest {
     public void before() {
         ApplicationContext ac = new ClassPathXmlApplicationContext("before/applicationContext.xml");
         beforeService = (BeforeService) ac.getBean("beforeServiceImpl");
-        System.out.println("绑定切面后的对象类型：" + beforeService.getClass());
+        System.out.println("前置通知绑定切面后的对象类型：" + beforeService.getClass());
     }
 
     @Test
