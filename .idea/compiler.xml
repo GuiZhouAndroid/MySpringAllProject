@@ -16,6 +16,7 @@
         <module name="SpringDemo09_AspectJ" />
         <module name="SpringDemo02_NOT_IOC_MVC" />
         <module name="SpringDemo07_AOP" />
+        <module name="SpringDemo10_Spring_Mybatis_SM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

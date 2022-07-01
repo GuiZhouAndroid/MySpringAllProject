@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/SpringDemo07_AOP/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDemo08_ProtoSupport_AOP/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDemo09_AspectJ/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo10_Spring_Mybatis_SM/pom.xml" />
       </list>
     </option>
   </component>

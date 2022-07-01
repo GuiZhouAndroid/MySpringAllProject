@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dhrj.java.zsitking.mapper.AccountsMapper">
+    <!--
+        int addAccounts(Accounts accounts);
+       实体类
+        private Integer aId;
+        private String aName;
+        private String aContact;
+    -->
+    <insert id="addAccounts" parameterType="accounts">
+        insert into accounts values(#{aId},#{aName},#{aContact})
+    </insert>
+</mapper>
