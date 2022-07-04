@@ -30,7 +30,7 @@ public class TestSM {
     public void testUsers() {
         //2.取出UsersServiceImpl
         UsersService uService = (UsersService) ac.getBean("usersServiceImpl");
-        int num = uService.insert(new Users(1999,"张松","123456"));
+        int num = uService.addUsers(new Users(1998,"张松","root"));
         System.out.println(num);
     }
 

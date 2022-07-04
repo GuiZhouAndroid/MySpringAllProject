@@ -3,8 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
-    <!-- 设置日志在控制台输出 (数据源+事务提交状态+SQL+入参+出参+连接池等信息)-->
+    <!-- 数据源+事务提交状态+SQL+入参+出参+连接池等信息交给Spring以注入Bean的方式创建对象和管理使用 -->
+    <!-- 设置日志在控制台输出 -->
     <settings>
         <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>

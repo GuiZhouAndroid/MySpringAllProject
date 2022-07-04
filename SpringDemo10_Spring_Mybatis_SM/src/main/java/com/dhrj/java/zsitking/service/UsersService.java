@@ -12,5 +12,5 @@ import com.dhrj.java.zsitking.entity.Users;
  */
 public interface UsersService {
     //新增用户
-    int insert(Users users);
+    int addUsers(Users users);
 }
