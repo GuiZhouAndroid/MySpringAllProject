@@ -30,16 +30,16 @@ public class UsersServiceImpl implements UsersService {
      *
      * 二、Spring框架IOC控制反转方式获取数据访问层的对象（推荐，此方式比较高，代码复用，开发效率高。）
      * 1.利用Spring注解的方式，将数据访问层对象注入（创建单例对象）到Spring的Beans工厂中
-     * 2.此时Spring框架在内存中创建了一个UsersMapper类型对象，并且将其存储到了IOC容器中，这个对象就是我们所需要的对象
-     * 3.使用@Autowired按类型将UsersMapper对象注入到业务逻辑层的对象中。
-     *  -若在此条件下单例模式是默认的（scope="singleton"），使用@Autowired@Resources自动查找数据访问层的对象都行
+     * 2.此时Spring框架在内存中创建了一个UsersMapper接口实现类型对象，并且将其存储到了IOC容器中，这个对象就是我们所需要的对象
+     * 3.使用@Autowired按类型将UsersMapper接口实现类型对象注入到业务逻辑层的对象中
+     *  -若在此条件下单例模式是默认的（scope="singleton"），使用@Autowired@Resources自动查找引用数据访问层的对象都行
      *  -如果是多例模式(scope="prototype")，则需要使用@Autowired+@Qualifier或@Resources自动查找数据访问层的对象
-     * 4.这样业务逻辑层就可以直接使用UsersMapper对象调用数据访问层的方法了
-     * 注意：重要条件————>业务逻辑层必须标注@Service交给Spring去创建对象，将对象注入到IOC容器中，提供给控制层使用
+     * 4.这样业务逻辑层就可以通过接口实现类型对象直接调用数据访问层的业务方法了
+     * 注意：重要条件————>业务逻辑层必须标注@Service交给Spring去创建对象，如1、2同理，将对象注入到IOC容器中，提供给控制层Controller使用
      *
      * 三、以上一和二的区别：
-     *  A.共同点：都是使用JDK动态代理，CGLib代理需另配置细节参数。
-     *  B.不同点：方式一：使用IO流+控制正转创建SqlSessionFactory工厂对象，方式二：使用Spring控制反转基于注解的方式。
+     *  A.共同点：都是使用JDK动态代理，CGLib代理需另配置细节参数(根据目标对象没有实现接口，采用子类CGLib代理即可)。
+     *  B.不同点：方式一：使用IO流+控制正转创建SqlSession对象，方式二：使用基于注解的Spring控制反转。
      */
     @Autowired
     private UsersMapper usersMapper;
