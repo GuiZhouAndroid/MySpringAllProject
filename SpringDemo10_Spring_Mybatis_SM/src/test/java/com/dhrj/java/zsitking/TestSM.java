@@ -38,7 +38,8 @@ public class TestSM {
     public void testAccounts()  {
         //2.取出UsersServiceImpl
         AccountsService accountsService = (AccountsService) ac.getBean("accountsServiceImpl");
-        int num = accountsService.addAccounts(new Accounts(1,"张松的账户","账户余额"));
+        System.out.println("accountsService单例bean对象的类型"+accountsService.getClass());
+        int num = accountsService.addAccounts(new Accounts(666,"张松的账户666","账户余额666"));
         System.out.println(num);
     }
 }

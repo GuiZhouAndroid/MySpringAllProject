@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!--导入applicationContext_mapper.xml文件-->
     <import resource="applicationContext_mapper.xml"/>
     <!-- SM是基于注解的开发,所以添加包扫描 -->
     <context:component-scan base-package="com.dhrj.java.zsitking.service.impl"/>
     <!-- 事务处理 -->
-
+    <!-- 1.将MyBatis数据源替换为Druid数据源的Spring单例bean对象加载到Spring事务管理器中 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!-- 2.将Spring事务管理器单例bean对象加载到Spring事务注解驱动中
+           使用@Transaction注解以及它的各类事务属性值，
+           再通过代理模式进行底层事务拦截控制，当业务合法后正常添加数据，完成业务实现
+           proxy-target-class="false"：
+                当该值是false时，使用JDK实现动态代理，这也是默认的实现方式
+                当该值是true时,使用cglib的实现方式动态代理
+    -->
+    <tx:annotation-driven proxy-target-class="false" transaction-manager="transactionManager"/>
 </beans>
