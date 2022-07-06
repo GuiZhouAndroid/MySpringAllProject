@@ -17,15 +17,15 @@ import org.springframework.transaction.annotation.Transactional;
  * @VCS: <a href="https://github.com/GuiZhouAndroid"/>
  * @Copyright: 辽宁省-大连市-东华软件大连分公司
  */
-@Transactional(propagation = Propagation.REQUIRED,//事务的传播特性(如果当前存在事务,就加入该事务,如果当前没有事务,就创建一个新的事务)
-        noRollbackForClassName = "ArithmeticException", //指定发生什么异常不回滚,使用的是异常的名称(发生ArithmeticException异常时不回滚)
-        noRollbackFor = ArithmeticException.class,//指定发生什么异常不回滚,使用的是异常的类型(发生ArithmeticException异常时不回滚)
-        rollbackForClassName = "",//指定发生什么异常必须回滚(发生ArithmeticException异常时回滚)
-        rollbackFor = ArithmeticException.class,//指定发生什么异常必须回滚(发生ArithmeticException异常时回滚)
-        timeout = -1, //连接超时设置,默认值是-1,表示永不超时
-        readOnly = false, //默认是false,如果是查询操作,必须设置为true.
-        isolation = Isolation.DEFAULT//使用数据库自已的隔离级别
-)//事务处于开启状态，生效
+//@Transactional(propagation = Propagation.REQUIRED,//事务的传播特性(如果当前存在事务,就加入该事务,如果当前没有事务,就创建一个新的事务)
+//        noRollbackForClassName = "ArithmeticException", //指定发生什么异常不回滚,使用的是异常的名称(发生ArithmeticException异常时不回滚)
+//        noRollbackFor = ArithmeticException.class,//指定发生什么异常不回滚,使用的是异常的类型(发生ArithmeticException异常时不回滚)
+//        rollbackForClassName = "",//指定发生什么异常必须回滚(发生ArithmeticException异常时回滚)
+//        rollbackFor = ArithmeticException.class,//指定发生什么异常必须回滚(发生ArithmeticException异常时回滚)
+//        timeout = -1, //连接超时设置,默认值是-1,表示永不超时
+//        readOnly = false, //默认是false,如果是查询操作,必须设置为true.
+//        isolation = Isolation.DEFAULT//使用数据库自已的隔离级别
+//)//事务处于开启状态，生效
 @Service //交给Spring去创建对象
 public class AccountsServiceImpl implements AccountsService {
 

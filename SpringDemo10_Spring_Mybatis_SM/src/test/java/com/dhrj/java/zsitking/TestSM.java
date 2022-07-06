@@ -20,11 +20,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestSM {
 
     private ApplicationContext ac;
+    private ApplicationContext acTrans;
 
     @Before
     public void before() {
         //1.创建容器并启动
         ac = new ClassPathXmlApplicationContext("applicationContext_service.xml");
+        acTrans = new ClassPathXmlApplicationContext("applicationContext_trans.xml");
     }
     @Test
     public void testUsers() {
@@ -40,6 +42,14 @@ public class TestSM {
         AccountsService accountsService = (AccountsService) ac.getBean("accountsServiceImpl");
         System.out.println("accountsService单例bean对象的类型"+accountsService.getClass());
         int num = accountsService.addAccounts(new Accounts(666,"张松的账户666","账户余额666"));
+        System.out.println(num);
+    }
+    @Test
+    public void testTrans(){
+        //取出UsersServiceImpl
+        UsersService uService = (UsersService) ac.getBean("usersServiceImpl");
+        System.out.println("uService单例bean对象的类型"+uService.getClass());
+        int num = uService.addUsers(new Users(1000,"张松事务传播特性","张松事务传播特性"));
         System.out.println(num);
     }
 }

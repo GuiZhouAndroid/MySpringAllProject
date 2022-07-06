@@ -25,10 +25,10 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-        <!--aspectj依赖-->
+        <!-- AspectJ依赖配置 -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <artifactId>spring-aspects</artifactId>
             <version>5.3.21</version>
         </dependency>
         <!--spring核心ioc-->
